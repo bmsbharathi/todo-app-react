@@ -1,0 +1,29 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.home{
+    margin:0px auto;
+    margin-top: 50px;
+    align-items: center;
+    max-width: 1000px;
+}
+.home input {
+    width: 65%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+    outline-width: 0;
+    float:left;
+    margin-right:30px;
+
+}
+.home i {
+    color: green;
+    float:left;
+
+}
+.home i:hover {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 30%;
+    cursor: pointer;
+}

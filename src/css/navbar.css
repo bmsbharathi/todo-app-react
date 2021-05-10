@@ -1,0 +1,26 @@
+.navbar {
+    height: 100px;
+    max-width: 1000px;
+    align-items: center;
+    padding: 20px;
+    margin: 0px auto;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.navbar .header {
+    text-align: left;
+    float: left;
+}
+.navbar .socialLinks {
+    float: right;
+    padding: 35px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover {
+    text-decoration: underline;
+    color: red;
+}
