@@ -1,16 +1,24 @@
 {
-    "todo": [
-        {
-            "id": 1,
-            "message": "First Todo",
-            "priority": 5,
-            "createdOn": "05.05.2021 UTC+0"
-        },
-        {
-            "id": 2,
-            "message": "Second Todo",
-            "priority": 5,
-            "createdOn": "05.05.2021 UTC+0"
-        }
-    ]
+  "todo": [
+    {
+      "id": 1,
+      "message": "First Todo",
+      "priority": 5,
+      "createdOn": "05.05.2021 UTC+0",
+      "isCompleted": false
+    },
+    {
+      "id": 2,
+      "message": "Second Todo",
+      "priority": 5,
+      "createdOn": "05.05.2021 UTC+0",
+      "isCompleted": false
+    },
+    {
+      "createdOn": "2021-05-11T15:56:16.784Z",
+      "message": "HelloWorld",
+      "isCompleted": false,
+      "id": 3
+    }
+  ]
 }

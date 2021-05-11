@@ -14,19 +14,18 @@ const ShowTodos = () => {
 
     return ( 
         <div className="showTodo">
-
+            <h3> Your Todos</h3>
             { isPending && <div>Loading...</div> }
             { error && <div>{ error }</div> }
-            <h3> Your Todos</h3>
             {   
                 data &&
                 data.map( (data) => (
                     <div className="todos" key={data.id}>
                         { data.message }
-                    <div className="actions">
-                        <i class="fas fa-trash-alt fa-2x"></i>
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
+                        <div className="actions">
+                            <i className="fas fa-trash-alt fa-2x"></i>
+                            <i className="fas fa-check-circle fa-2x"></i>
+                        </div>
                     </div>
                  ) )
             }
