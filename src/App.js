@@ -1,14 +1,16 @@
 import './css/App.css';
 import Navbar from './Navbar';
-import Home from './Home';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ShowTodos from './ShowTodo';
+import AddTodo from './AddTodo';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <Home />
+        <AddTodo />
+        <ShowTodos />
       </Router>
     </div>
   );

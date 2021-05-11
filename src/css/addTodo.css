@@ -3,8 +3,10 @@
 .home{
     margin:0px auto;
     margin-top: 50px;
+    display: block;
     align-items: center;
     max-width: 1000px;
+    height: 100px;
 }
 .home input {
     width: 65%;
@@ -15,12 +17,12 @@
     outline-width: 0;
     float:left;
     margin-right:30px;
+    margin-bottom: 50px;
 
 }
 .home i {
     color: green;
     float:left;
-
 }
 .home i:hover {
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
