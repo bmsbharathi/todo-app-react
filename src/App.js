@@ -1,6 +1,6 @@
 import './css/App.css';
 import Navbar from './Navbar';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import ShowTodos from './ShowTodo';
 import AddTodo from './AddTodo';
 
@@ -9,8 +9,12 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <AddTodo />
-        <ShowTodos />
+        <Switch>
+          <Route exact path="/">
+            <AddTodo />
+            <ShowTodos />
+          </Route>        
+        </Switch>
       </Router>
     </div>
   );
