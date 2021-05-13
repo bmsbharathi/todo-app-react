@@ -1,17 +1,10 @@
-import useFetch from './useFetch';
 import './css/showtodo.css';
 
-const ShowTodos = () => {
+const ShowTodos = (props) => {
     
-    var {data, isPending, error} = useFetch('http://localhost:8000/todo');
-
-        
-    if(data){
-        data.sort( (object1, object2)  => {
-            return ( object1.createdOn > object2.createdOn )? -1 : 1;
-        });
-        console.log('data is sorted..');
-    }
+    var data = props.data;
+    var isPending = props.isPending;
+    var error = props.error;
 
     return ( 
         <div className="showTodo">

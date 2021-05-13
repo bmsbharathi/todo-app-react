@@ -1,19 +1,17 @@
 import './css/App.css';
+import Home from './Home';
 import Navbar from './Navbar';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import ShowTodos from './ShowTodo';
-import AddTodo from './AddTodo';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+      <Navbar />
         <Switch>
           <Route exact path="/">
-            <AddTodo />
-            <ShowTodos />
-          </Route>        
+            <Home />
+          </Route>
         </Switch>
       </Router>
     </div>
