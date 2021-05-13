@@ -3,13 +3,14 @@ import './css/showtodo.css';
 
 const ShowTodos = () => {
     
-    const {data, isPending, error} = useFetch('http://localhost:8000/todo');
+    var {data, isPending, error} = useFetch('http://localhost:8000/todo');
 
         
     if(data){
-        data.sort( (data1, data2) => {
-            return data1.createdOn > data2.createOn ? -1 : 1;
-        } );
+        data.sort( (object1, object2)  => {
+            return ( object1.createdOn > object2.createdOn )? -1 : 1;
+        });
+        console.log('data is sorted..');
     }
 
     return ( 
