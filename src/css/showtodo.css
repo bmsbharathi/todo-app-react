@@ -7,15 +7,20 @@
     align-items: center;
 }
 .showTodo h3 {
-
     text-decoration: underline;
+}
+.fa-trash-alt, .fa-check-circle {
+    cursor: pointer;
+    padding: 10px;
+}
+.showTodo .todos .actions{
+    padding: 10px;
 }
 .todos {
     margin: 0px auto;
     margin-bottom: 10px;
     padding: 30px;
     background: #FABC04;
-    /* background-color: #FFF375; */
     text-align: center;
     width: 200px;
     border: 1px solid #FFF375;
@@ -24,11 +29,6 @@
 .fa-trash-alt {
     color: red;
 }
-
 .fa-check-circle {
     color: green
-}
-.showTodo .todos .actions{
-    padding: 20px;
-    margin-bottom: 2px;
 }

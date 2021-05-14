@@ -1,10 +1,8 @@
 import './css/addTodo.css';
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 
 const AddTodo = () => {
     const [todoNote,setTodoNote] = useState('');
-    const history = useHistory();
     const onButtonClick = (evt) => {
         
         const todo = {
